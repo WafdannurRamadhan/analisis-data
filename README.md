@@ -1,11 +1,12 @@
 # Analisis-Data
 # Wafdannur Ramadhan
 
+# Penjelasan singkat 
+
 Dalam mengikuti program Dicoding ini, saya mengerjakan salah satu project yang diberikan untuk menganalisis data dengan menggunakan bahasa pemrograman Pyhton dengan menggunakan Dataset yang nantinya akan ditampilkan ke Dashboard berbasis steamlit
 
-Berikut adalah beberapa informasi yang perlu diketahui:
-# 1. Dataset
-Pada project ini memiliki beberapa Dataset yakni : 
+# Deskripsi File 
+# 1. Main Dataset
 - day.csv  : Pada Dataset ini berisikan informasi tentang data pengguna sepeda berdasarkan harinya
 - hour.csv : Pada Dataset ini berisikan informasi tentang data pengguna sepeda berdasarkan jamnya
 
