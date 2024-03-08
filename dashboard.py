@@ -10,10 +10,6 @@ hour_df = pd.read_csv("hour.csv")
 # Preprocessing
 day_df.drop(["windspeed"], axis=1, inplace=True)
 hour_df.drop(["windspeed"], axis=1, inplace=True)
-# day_df['dteday'] = day_df['dteday'].astype('datetime64')
-# hour_df['dteday'] = hour_df['dteday'].astype('datetime64')
-# day_df['workingday'] = day_df['workingday'].astype('object')
-# hour_df['workingday'] = hour_df['workingday'].astype('object')
 
 # Analysis
 factor = day_df.groupby('weathersit')['cnt'].mean().reset_index()
@@ -42,7 +38,8 @@ fig, ax = plt.subplots(figsize=(8,6))
 sns.barplot(x='weathersit',
             y='cnt',
             palette=['red', 'blue', 'green'],
-            data=factor)
+            data=factor,
+            ax=ax)
 plt.title('Diagram Peminjaman Sepeda berdasarkan Kondisi Cuaca')
 plt.xlabel('Kondisi Cuaca')
 plt.ylabel('Jumlah Peminjaman Sepeda')
@@ -57,4 +54,4 @@ sns.barplot(x='workingday',
 plt.title('Perbandingan Pengguna sepeda di Weekdays dan Weekend')
 plt.xlabel('Perbedaan Hari')
 plt.ylabel('Jumlah Pengguna Sepeda')
-st.pyplot(fig)
+st.pyplot()
