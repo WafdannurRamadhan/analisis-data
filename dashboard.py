@@ -54,4 +54,4 @@ sns.barplot(x='workingday',
 plt.title('Perbandingan Pengguna sepeda di Weekdays dan Weekend')
 plt.xlabel('Perbedaan Hari')
 plt.ylabel('Jumlah Pengguna Sepeda')
-st.pyplot(fig)
+st.pyplot()
