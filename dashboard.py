@@ -46,12 +46,13 @@ plt.ylabel('Jumlah Peminjaman Sepeda')
 st.pyplot(fig)
 
 st.write('## Perbandingan Pengguna Sepeda di Hari Kerja dan Akhir Pekan')
-plt.figure(figsize=(8, 6))
+fig, ax = plt.subplots(figsize=(8,6))
 sns.barplot(x='workingday',
             y='cnt',
             palette=['red', 'green'],
-            data=weekday)
+            data=weekday,
+            ax=ax)
 plt.title('Perbandingan Pengguna sepeda di Weekdays dan Weekend')
 plt.xlabel('Perbedaan Hari')
 plt.ylabel('Jumlah Pengguna Sepeda')
-st.pyplot()
+st.pyplot(fig)
